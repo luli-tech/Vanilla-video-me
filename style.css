@@ -1,0 +1,655 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+}
+body {
+  padding-top: 60px;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 15px;
+  background: #272424;
+  z-index: 100;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+.logo-container {
+  width: 150px;
+  height: 40px;
+}
+.logo-container img {
+  width: 100%;
+  height: 100%;
+}
+.bar-container {
+  background: red;
+  width: 35px;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+  padding: 5px 0;
+}
+i {
+  font-size: 20px;
+}
+.carousel-container {
+  color: white;
+  height: 300px;
+  overflow: scroll;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+.background {
+  height: 100%;
+  width: 100%;
+}
+.background img {
+  height: 100%;
+  width: 100%;
+}
+.carousel-objects {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.inside-carousel-objects p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.inside-carousel-objects button {
+  background: orangered;
+  width: 70px;
+  height: 30px;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+.text {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+}
+.carousel-dot {
+  display: flex;
+  position: absolute;
+  bottom: 4px;
+  left: 180px;
+  gap: 10px;
+  z-index: 1;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background: white;
+  border-radius: 7px;
+}
+.red {
+  background: red;
+}
+.major-holder {
+  max-width: 200px;
+  height: 11rem;
+  border: 1px solid #dddee8;
+  flex-basis: 45%;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.img-holder {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  max-height: 120px;
+}
+.img-holder img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.profile-holder {
+  width: 22px;
+  max-height: 22px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 2px;
+}
+.profile-holder img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.profile {
+  display: flex;
+  gap: 6px;
+  padding-top: 5px;
+}
+
+.minor-holder {
+  padding: 8px;
+  overflow: hidden;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+  color: #2650d9;
+}
+.mario {
+  font-size: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  font-weight: bold;
+}
+
+.ey {
+  font-size: 13px;
+  color: #8d8f88;
+  margin-right: 5px;
+}
+.date {
+  margin-top: 2px;
+  font-size: 13px;
+  color: #8d8f88;
+}
+.fa-eye {
+  font-size: 12px;
+  color: #8d8f88;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.eye {
+  color: #8d8f88;
+  font-size: 13px;
+}
+.content-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px 10px;
+  min-height: 50vh;
+  align-items: center;
+  padding: 10px 10px;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  overflow: scroll;
+}
+.btns button {
+  border: 1px solid blue;
+  padding: 5px 10px;
+  font-size: 14px;
+  background: transparent;
+  color: black;
+  border: 1px solid #dddee8;
+}
+.web-info {
+  min-height: 100px;
+  padding: 40px 0 25px 0;
+  text-align: center;
+  color: #c6c7ca;
+  background: #181818;
+  margin-top: 30px;
+}
+.web-info .find {
+  font-size: 17px;
+}
+.face {
+  color: blue;
+  background: white;
+  border-radius: 16px;
+  font-size: 21px;
+}
+.twit {
+  color: white;
+  background: #116086;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 16px;
+}
+.social-media-icon {
+  justify-content: center;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+}
+.social-media-icon i {
+  color: white;
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 15px;
+}
+.contact-details p span {
+  font-weight: bold;
+}
+.contact-details p a {
+  color: #c6c7ca;
+}
+hr {
+  width: 80%;
+  background: #181818;
+  border: none;
+  margin: auto;
+}
+.copywright {
+  background: #181818;
+  text-align: center;
+  color: #65676f;
+  padding: 20px 0;
+  font-size: 15px;
+}
+.sidebar {
+  height: 100vh;
+  width: 75%;
+  position: fixed;
+  right: -75%;
+  overflow: auto;
+  top: 0;
+  transition: 0.3s ease;
+  background: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+.author {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
+  height: 210px;
+}
+.author-profile {
+  height: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 10px;
+  width: 100px;
+}
+.author-profile img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.author p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.home {
+  display: flex;
+  gap: 15px;
+  color: #4d4e5c;
+  align-items: center;
+  border: 0.1px dashed #c6c7ca;
+  font-size: 15px;
+  padding: 15px;
+}
+.home i {
+  color: red;
+  font-size: 12px;
+}
+.home p {
+  margin-right: auto;
+}
+.categories-content div {
+  border: 0.1px dashed #4d4e5c;
+  padding: 15px;
+  color: #4d4e5c;
+  font-size: 15px;
+}
+.categories-content div p {
+  margin-left: 27px;
+}
+.categories-content {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.wrap {
+  max-height: 250px;
+}
+.rot {
+  transform: rotate(90deg);
+  transition: all 0.1s ease-in-out;
+}
+.inside-sidebar {
+  height: 100%;
+  overflow: scroll;
+}
+body {
+  position: relative;
+}
+.ov {
+  background: black;
+  position: fixed;
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+  width: 100%;
+}
+.stop {
+  overflow: hidden;
+}
+.input-search {
+  width: 170px;
+  height: 30px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  outline: none;
+}
+.link {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Limit to 3 lines */
+  overflow: hidden; /* Hide the overflowed text */
+}
+.spinner-container {
+  margin-top: 80px;
+  position: absolute;
+  top: 100px;
+  padding: 10px;
+  transform: translate(0%, 100%);
+  width: 12rem;
+  text-align: center;
+  right: 120px;
+}
+.spinner-container i {
+  font-size: 100px;
+  animation: spin infinite 2s;
+}
+.spinner-container p {
+  width: fit-content;
+  text-align: center;
+}
+@keyframes spin {
+  0% {
+    color: lavender;
+    transform: rotate(0deg);
+  }
+  100% {
+    color: green;
+    transform: rotate(360deg);
+  }
+}
+.all-content {
+  position: relative;
+}
+.page {
+  border: none;
+  border-radius: 10px;
+}
+.over {
+  padding: 5px 20px;
+  font-weight: bold;
+}
+.title-holder {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+.news {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.news img {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  object-fit: center;
+}
+.news2 img {
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  object-fit: center;
+  float: right;
+}
+.pageContainer {
+  max-height: 200vh;
+}
+.headlines {
+  font-size: 25px;
+  color: #3a4188;
+  width: 100%;
+  height: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+. .residuals {
+  font-size: 20px;
+  line-height: 30px;
+}
+.residuals .h3 {
+  font-size: 20px;
+  color: grey;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 200px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.residuals author {
+}
+.residuals p span {
+  width: 60px;
+  font-size: 15px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.residuals .date {
+  font-size: 15px;
+}
+.social-icons {
+  color: grey;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  font-size: 30px;
+}
+.main-content p {
+  text-align: justify;
+  font-family: arial;
+}
+.page-color {
+  background: red;
+  color: white;
+}
+.title-id {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* General container styles */
+.embla {
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* Full width of the parent container */
+  height: 400px; /* Set a fixed height or adjust as needed */
+}
+
+/* Styles for the carousel viewport */
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styles for the carousel container (holds all slides) */
+.embla__container {
+  display: flex;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for sliding */
+}
+
+/* Styles for individual slides */
+.embla__slide {
+  width: 100%; /* Each slide takes up full container width */
+  height: 200px; /* Ensure slide takes full height of viewport */
+  box-sizing: border-box; /* Includes padding and border in width */
+  position: relative; /* For absolute positioning of internal elements */
+}
+
+/* Styles for images and captions inside slides */
+.background {
+  width: 412px;
+  height: 300px; /* Ensure it covers the full height of the slide */
+  display: flex; /* Use flexbox to center the image */
+  align-items: center; /* Center image vertically */
+  justify-content: center; /* Center image horizontally */
+  overflow: hidden; /* Hide overflow to keep images within bounds */
+  position: relative; /* For positioning of image */
+}
+
+.headlines {
+  max-width: 100%; /* Ensure image does not exceed slide width */
+  max-height: 100%; /* Ensure image does not exceed slide height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Styles for carousel captions */
+.carousel-caption {
+  position: absolute; /* Position over the image */
+  top: 50%; /* Distance from the bottom */
+  left: 20px; /* Distance from the left */
+  color: #fff; /* Text color */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px;
+  height: fit-content;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: calc(100% - 70px);
+  border-radius: 5px;
+}
+
+.carousel-caption h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 20px; /* Font size for heading */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.carousel-caption p {
+  margin: 0; /* Remove default margin */
+  font-size: 15px; /* Font size for paragraph */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.carousel-caption a {
+  text-decoration: none;
+  color: white;
+  background: red;
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* Styles for navigation buttons */
+.embla__prev,
+.embla__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border: none;
+  color: #fff; /* Button text color */
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10; /* Ensure buttons are on top */
+}
+
+.embla__prev {
+  left: 10px; /* Distance from the left */
+  opacity: 0;
+}
+
+.embla__next {
+  right: 10px; /* Distance from the right */
+  opacity: 0;
+}
+
+/* Optional: Add hover effects for buttons */
+.embla__prev:hover,
+.embla__next:hover {
+  background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+/* Optional: Styles for dots or pagination if used */
+.embla-dot {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.embla-dot .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc; /* Inactive dot color */
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.embla-dot .dot.active {
+  background-color: #333; /* Active dot color */
+}
+
+/* Styles for dots container */
+.embla__dots {
+  position: absolute;
+  bottom: 10px; /* Distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px; /* Spacing between dots */
+}
+
+/* Styles for individual dots */
+I .embla__dots .embla__dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc; /* Inactive dot color */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Styles for the active dot */
+.embla__dots .embla__dot.is-active {
+  background-color: #333; /* Active dot color */
+}
